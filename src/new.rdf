@@ -1,0 +1,1322 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Course"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#createdBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#createdBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#describes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#describes">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Resource"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isDescribedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasResource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#includedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#includedIn">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Course"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Resource"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isDescribedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isDescribedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#similarTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#similarTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConceptName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConceptName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasCourseDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasCourseDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasCourseName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasCourseName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasDescription">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasSiteName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasSiteName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasURL"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#AVL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#AVL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Trees"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#ActivitySelection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#ActivitySelection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Greedy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Course"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DivideAndConquer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DynamicProgramming"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Greedy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Recursion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Arrays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Arrays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Stacks"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Sorting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DataStructures"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Queues"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heaps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DynamicProgramming"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Searching"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Strings"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BST -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BST">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Trees"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BalanceParentheses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BalanceParentheses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DynamicProgramming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bellman-Ford -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bellman-Ford">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#ShortestPath"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BinarySearch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BinarySearch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Searching"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BitManipulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BitManipulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BreadthFirstSearch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BreadthFirstSearch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Graphs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Queues"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bubblesort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bubblesort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Sorting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Circular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Circular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#LinkedList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#CoinChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#CoinChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DynamicProgramming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Course"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DataStructures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DataStructures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Course"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Queues"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Arrays"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Strings"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#LinkedList"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Trees"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Stacks"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DepthFirstSearch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DepthFirstSearch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Graphs"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Recursion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Recursion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Dijkstra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Dijkstra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#ShortestPath"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DivideAndConquer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DivideAndConquer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Recursion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Doubly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Doubly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#LinkedList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DynamicProgramming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DynamicProgramming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Arrays"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Recursion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Graphs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Graphs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Trees"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#ShortestPath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#MinimumSpanningTree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DataStructures"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Greedy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Greedy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heaps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heaps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Prims"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Arrays"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Trees"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heapsort"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DataStructures"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heapsort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heapsort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Sorting"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heaps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#HuffmanCoding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#HuffmanCoding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Greedy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Insertionsort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Insertionsort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Sorting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Kruskals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Kruskals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#MinimumSpanningTree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#LinearSearch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#LinearSearch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Searching"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#LinkedList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#LinkedList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DataStructures"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#LongestCommonSubsequnce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#LongestCommonSubsequnce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DynamicProgramming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Mergesort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Mergesort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DivideAndConquer"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Sorting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#MinimumSpanningTree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#MinimumSpanningTree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Trees"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Graphs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Prims -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Prims">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#MinimumSpanningTree"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heaps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#PriorityQueue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#PriorityQueue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heaps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Queues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Queues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BreadthFirstSearch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Arrays"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DataStructures"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Quicksort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Quicksort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DivideAndConquer"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Sorting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Recursion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Recursion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DivideAndConquer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Trees"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DynamicProgramming"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DepthFirstSearch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#RedBlack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#RedBlack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Trees"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Resource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Searching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Searching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Arrays"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Selectionsort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Selectionsort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Sorting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#ShortestPath -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#ShortestPath">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Graphs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Singly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Singly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#LinkedList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Sorting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Sorting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Arrays"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Stacks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Stacks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DataStructures"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Arrays"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#StringSearching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#StringSearching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Strings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Strings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Strings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Arrays"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DataStructures"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Trees -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Trees">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DataStructures"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heaps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#MinimumSpanningTree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#hasRequisite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Recursion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#isPrerequisiteFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Graphs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#ActivitySelection_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#ActivitySelection_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#ActivitySelection"/>
+        <hasConceptName rdf:datatype="&xsd;string">Activity_Selection_Problem</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">http://www.youtube.com/watch?v=pN7RzOWIOn4
+</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms_course_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms_course_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Algorithms"/>
+        <hasCourseName rdf:datatype="&xsd;string">Introduction_to_Algorithms_CS101</hasCourseName>
+        <hasCourseDescription rdf:datatype="&xsd;string">To design and analyse the various algorithms used in Computer Science.</hasCourseDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Array_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Array_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Arrays"/>
+        <hasConceptName rdf:datatype="&xsd;string">Array</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=jP4A2JTr1Qw</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Avl_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Avl_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#AVL"/>
+        <hasConceptName rdf:datatype="&xsd;string">AVL_Trees</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=lQp431QjrWI</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BalanceParentheses_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BalanceParentheses_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BalanceParentheses"/>
+        <hasConceptName rdf:datatype="&xsd;string">Balanced_Parantheses_Problem</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">http://www.youtube.com/watch?v=DtVLwspTf8Q</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bellmanford_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bellmanford_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bellman-Ford"/>
+        <hasConceptName rdf:datatype="&xsd;string">Bellman_Ford_Algorithm</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=W2fKGISUAtM</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bfs_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bfs_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BreadthFirstSearch"/>
+        <hasConceptName rdf:datatype="&xsd;string">BFS_Algorithm</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">http://www.youtube.com/watch?v=s-CYnVz-uh4</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Binarysearch_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Binarysearch_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BinarySearch"/>
+        <hasConceptName rdf:datatype="&xsd;string">Binary_Search</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">http://www.youtube.com/watch?v=pRKPgAiY6-g</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bitmanipulation_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bitmanipulation_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BitManipulation"/>
+        <hasConceptName rdf:datatype="&xsd;string">Bit_Manipulation</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=uUtb0BaeosQ</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bst_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bst_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#BST"/>
+        <hasConceptName rdf:datatype="&xsd;string">BST</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=pYT9F8_LFTM</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bubblesort_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bubblesort_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Bubblesort"/>
+        <hasConceptName rdf:datatype="&xsd;string">Bubble_Sort</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=P00xJgWzz2c</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Circularlist_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Circularlist_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Circular"/>
+        <hasConceptName rdf:datatype="&xsd;string">Circular_Linked_List</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=pBaZl9B448g</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Coinchange_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Coinchange_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#CoinChange"/>
+        <hasConceptName rdf:datatype="&xsd;string">Coin_Change_Problem</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">http://www.youtube.com/watch?v=GafjS0FfAC0</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Datastructures_course_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Datastructures_course_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DataStructures"/>
+        <hasCourseName rdf:datatype="&xsd;string">Data_Structures_CS102</hasCourseName>
+        <hasCourseDescription rdf:datatype="&xsd;string">To understand and implement the various data structures used in Computer Science.</hasCourseDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Dfs_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Dfs_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#DepthFirstSearch"/>
+        <hasConceptName rdf:datatype="&xsd;string">DFS_Algorithm</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">http://www.youtube.com/watch?v=CIm6RzdoPCI</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Dijkstra_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Dijkstra_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Dijkstra"/>
+        <hasConceptName rdf:datatype="&xsd;string">Dijkstra_Algorithm</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=qJ5Ozb2ZSxM</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Doublylist_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Doublylist_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Doubly"/>
+        <hasConceptName rdf:datatype="&xsd;string">Double_Linked_List</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=VOQNf1VxU3Q</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heapsort_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heapsort_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Heapsort"/>
+        <hasConceptName rdf:datatype="&xsd;string">Heapsort</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=6NB0GHY11Iw</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Huffmancoding_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Huffmancoding_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#HuffmanCoding"/>
+        <hasConceptName rdf:datatype="&xsd;string">Huffman_Coding</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">http://www.youtube.com/watch?v=-eJF0gs8OY0</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Insertionsort_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Insertionsort_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Insertionsort"/>
+        <hasConceptName rdf:datatype="&xsd;string">InsertionSort</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=c4BRHC7kTaQ</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Kruskals_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Kruskals_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Kruskals"/>
+        <hasConceptName rdf:datatype="&xsd;string">Kruskal_Algorithm</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=5xosHRdxqHA</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Linearsearch_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Linearsearch_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#LinearSearch"/>
+        <hasConceptName rdf:datatype="&xsd;string">Linear_Search</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">http://www.youtube.com/watch?v=SGU9duLE30w</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Longestcommonsubsequence_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Longestcommonsubsequence_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#LongestCommonSubsequnce"/>
+        <hasConceptName rdf:datatype="&xsd;string">Longest_Common_Subsequence</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">http://www.youtube.com/watch?v=ml0i13Uvmuc</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Mergesort_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Mergesort_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Mergesort"/>
+        <hasConceptName rdf:datatype="&xsd;string">Mergesort</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=TzeBrDU-JaY</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Prims_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Prims_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Prims"/>
+        <hasConceptName rdf:datatype="&xsd;string">Prims_Algorithm</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=7FtGk9yr66A</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Priorityqueue_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Priorityqueue_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#PriorityQueue"/>
+        <hasConceptName rdf:datatype="&xsd;string">Priority_Queue</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=P4toxusBX9M
+</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Queues_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Queues_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Queues"/>
+        <hasConceptName rdf:datatype="&xsd;string">Queues</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=PjQdvpWfCmE</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Quicksort_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Quicksort_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Quicksort"/>
+        <hasConceptName rdf:datatype="&xsd;string">Quicksort</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=gtWw_8VvHjk</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Redblack_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Redblack_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#RedBlack"/>
+        <hasConceptName rdf:datatype="&xsd;string">Red_Black_Trees</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=iumaOUqoSCk</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Selectionsort_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Selectionsort_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Selectionsort"/>
+        <hasConceptName rdf:datatype="&xsd;string">Selection_Sort</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=6nDMgr0-Yyo</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Singlylist_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Singlylist_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Singly"/>
+        <hasConceptName rdf:datatype="&xsd;string">Singly_Linked_List</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=pBrz9HmjFOs</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Stacks_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Stacks_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Stacks"/>
+        <hasConceptName rdf:datatype="&xsd;string">Stacks</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=g1USSZVWDsY</hasURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Stringsearching_eg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#Stringsearching_eg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amrit/ontologies/2014/2/untitled-ontology-8#StringSearching"/>
+        <hasConceptName rdf:datatype="&xsd;string">String_Searching</hasConceptName>
+        <hasURL rdf:datatype="&xsd;string">https://www.youtube.com/watch?v=Zj_er99KMb8</hasURL>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

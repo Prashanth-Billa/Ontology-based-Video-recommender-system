@@ -1,0 +1,245 @@
+body{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+.tableheader {
+background-color: #848482;
+color:white;
+font-weight:bold;
+}
+.header {
+	 background:#333;
+	 color:white;
+ }
+.tablerow {
+background-color: #B6B6B4;
+color:white;
+}
+.message {
+color: #FF0000;
+font-weight: bold;
+text-align: center;
+width: 100%;
+}
+#username {
+font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+color:#56A5EC;
+font-weight:bold;
+width:200px;
+}
+#password{
+font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+color:#56A5EC;
+width:200px;
+font-weight:bold;
+}
+
+.submit{
+	color:white;
+	background:#333; 
+}
+	#signup {
+			width: 450px;
+			height: 350px;
+			margin: 20px auto 50px auto;
+			padding: 20px;
+			position: relative;
+			background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAMAAAB883U1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF7+/v7u7u////REBVnAAAAAN0Uk5T//8A18oNQQAAABZJREFUeNpiYGJiYmBiYgRiBhAGCDAAALsAFJhiJ+UAAAAASUVORK5CYII=);
+			border: 1px solid #ccc;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px; 
+			border-radius: 3px;  
+		}
+
+		#signup::before, 
+		#signup::after {
+			content: "";
+			position: absolute;
+			bottom: -3px;
+			left: 2px;
+			right: 2px;
+			top: 0;
+			z-index: -1;
+			background: #fff;
+			border: 1px solid #ccc;			
+		}
+
+		#signup::after {
+			left: 4px;
+			right: 4px;
+			bottom: -5px;
+			z-index: -2;
+			-moz-box-shadow: 0 8px 8px -5px rgba(0,0,0,.3);
+			-webkit-box-shadow: 0 8px 8px -5px rgba(0,0,0,.3);
+			box-shadow: 0 8px 8px -5px rgba(0,0,0,.3);
+		}
+
+		/*------------------------------*/
+
+		#signup h1 {
+			position: relative;
+			font: italic 1em/3.5em 'trebuchet MS',Arial, Helvetica;
+			color: #999;
+			text-align: center;
+			margin: 0 0 20px;
+		}
+
+		#signup h1::before,
+		#signup h1::after{
+			content:'';
+			position: absolute;
+			border: 1px solid rgba(0,0,0,.15);
+			top: 10px;
+			bottom: 10px;
+			left: 0;
+			right: 0;
+		}
+
+		#signup h1::after{
+			top: 0;
+			bottom: 0;
+			left: 10px;
+			right: 10px;
+		}
+
+		/*------------------------------*/
+
+        ::-webkit-input-placeholder {
+           color: #bbb;
+        }
+        
+        :-moz-placeholder {
+           color: #bbb;
+        } 				    	
+
+		.placeholder{
+			color: #bbb; /* polyfill */
+		}		
+
+		#signup input{
+			margin: 5px 0;
+			padding: 15px;
+			width: 100%;
+			*width: 518px;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;	
+		}
+
+		#signup input:focus{
+			outline: 0;
+			border-color: #aaa;
+			-moz-box-shadow: 0 2px 1px rgba(0, 0, 0, .3) inset;
+			-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .3) inset;
+			box-shadow: 0 2px 1px rgba(0, 0, 0, .3) inset;
+		}		
+
+
+
+
+#loginf{
+			width: 450px;
+			height: 200px;
+			margin: 10px auto 50px auto;
+			padding: 20px;
+			position: relative;
+			background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAMAAAB883U1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF7+/v7u7u////REBVnAAAAAN0Uk5T//8A18oNQQAAABZJREFUeNpiYGJiYmBiYgRiBhAGCDAAALsAFJhiJ+UAAAAASUVORK5CYII=);
+			border: 1px solid #ccc;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px; 
+			border-radius: 3px;  
+		}
+
+		#loginf::before, 
+		#loginf::after {
+			content: "";
+			position: absolute;
+			bottom: -3px;
+			left: 2px;
+			right: 2px;
+			top: 0;
+			z-index: -1;
+			background: #fff;
+			border: 1px solid #ccc;			
+		}
+
+		#loginf::after {
+			left: 4px;
+			right: 4px;
+			bottom: -5px;
+			z-index: -2;
+			-moz-box-shadow: 0 8px 8px -5px rgba(0,0,0,.3);
+			-webkit-box-shadow: 0 8px 8px -5px rgba(0,0,0,.3);
+			box-shadow: 0 8px 8px -5px rgba(0,0,0,.3);
+		}
+
+		/*------------------------------*/
+
+		#loginf h1 {
+			position: relative;
+			font: italic 1em/3.5em 'trebuchet MS',Arial, Helvetica;
+			color: #999;
+			text-align: center;
+			margin: 0 0 20px;
+		}
+
+		#loginf h1::before,
+		#loginf h1::after{
+			content:'';
+			position: absolute;
+			border: 1px solid rgba(0,0,0,.15);
+			top: 10px;
+			bottom: 10px;
+			left: 0;
+			right: 0;
+		}
+
+		#loginfh1::after{
+			top: 0;
+			bottom: 0;
+			left: 10px;
+			right: 10px;
+		}
+
+		/*------------------------------*/
+
+        ::-webkit-input-placeholder {
+           color: #bbb;
+        }
+        
+        :-moz-placeholder {
+           color: #bbb;
+        } 				    	
+
+		.placeholder{
+			color: #bbb; /* polyfill */
+		}		
+
+		#loginf input{
+			margin: 5px 0;
+			padding: 15px;
+			width: 100%;
+			*width: 518px;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;	
+		}
+
+		#loginf input:focus{
+			outline: 0;
+			border-color: #aaa;
+			-moz-box-shadow: 0 2px 1px rgba(0, 0, 0, .3) inset;
+			-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .3) inset;
+			box-shadow: 0 2px 1px rgba(0, 0, 0, .3) inset;
+		}		
+
+		div.custom_file_upload {
+	width: 230px;
+	height: 20px;
+	margin: 40px auto;
+}

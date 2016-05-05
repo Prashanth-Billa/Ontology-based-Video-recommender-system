@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+ .header {
+	 background:#333;
+	 color:white;
+ }
+ 
+ .searchterm {
+	color:#39F ;
+	font-weight:bold;
+ }
+ 
+ .submit {
+	color:white;
+	background:#333; 
+ }
+ #query{
+	font-weight:bold;
+	color: grey;
+
+ 
+}
+.loginbutton {
+	font-size:17px;
+	font-family:Georgia;
+	font-weight:normal;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #dcdcdc;
+	padding:9px 18px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #ededed 97%, #dfdfdf 8% );
+	background:-ms-linear-gradient( top, #ededed 97%, #dfdfdf 8% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(97%, #ededed), color-stop(8%, #dfdfdf) );
+	background-color:#ededed;
+	color:grey;
+	display:inline-block;
+	text-shadow:1px 1px 0px #ffffff;
+ 	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+ 	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+ 	box-shadow:inset 1px 1px 0px 0px #ffffff;
+}.loginbutton:hover {
+	background:-moz-linear-gradient( center top, #dfdfdf 97%, #ededed 8% );
+	background:-ms-linear-gradient( top, #dfdfdf 97%, #ededed 8% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(97%, #dfdfdf), color-stop(8%, #ededed) );
+	background-color:#dfdfdf;
+}.loginbutton:active {
+	position:relative;
+	top:1px;
+}
